@@ -49,6 +49,10 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/timeline.js"
+                           :foreign-libs [{:file "resources/recogito.min.js"
+                                          :provides ["recogito"]}
+                                          {:file "resources/html-sanitizer.js"
+                                          :provides ["htmlSanitizer"]}]
                            :main timeline.core
                            :optimizations :advanced
                            :pretty-print false}}]}
