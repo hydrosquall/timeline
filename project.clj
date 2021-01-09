@@ -54,7 +54,7 @@
                                           {:file "resources/html-sanitizer.js"
                                           :provides ["htmlSanitizer"]}]
                            :main timeline.core
-                           :optimizations :advanced
+                          ;  :optimizations :advanced
                            :pretty-print false}}]}
 
   :figwheel {;; :http-server-root "public" ;; default and assumes "resources"
